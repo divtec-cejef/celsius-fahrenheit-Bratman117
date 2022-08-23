@@ -6,9 +6,9 @@
  */
 
 (function main() {
-  'use strict'; // Demande un interprétation stricte du code
+  'use strict'; // Demande une interprétation stricte du code
 
-  let celsius = Number(prompt("Température en celsius: "));
+  let celsius = Number(prompt('Température en celsius: '));
   if (isNaN(celsius))
     alert(`${celsius}°C = ${celsius*9/5+32}°F`);
   else
