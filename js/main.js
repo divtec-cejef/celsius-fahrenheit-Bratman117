@@ -8,8 +8,8 @@
 (function main() {
   'use strict'; // Demande un interprétation stricte du code
 
-  let a = 'Bonjour';
+  let celsius = prompt("Température en celsius: ");
 
-  console.log(a);
+  alert(`${celsius}°C = ${celsius*9/5+32}°F`);
 }()); // Main IIFE
 
