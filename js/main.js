@@ -8,8 +8,11 @@
 (function main() {
   'use strict'; // Demande un interprétation stricte du code
 
-  let celsius = prompt("Température en celsius: ");
+  let celsius = Number(prompt("Température en celsius: "));
+  if (isNaN(celsius))
+    alert(`${celsius}°C = ${celsius*9/5+32}°F`);
+  else
+    alert('Ce n\'est pas un nombre!');
 
-  alert(`${celsius}°C = ${celsius*9/5+32}°F`);
 }()); // Main IIFE
 
